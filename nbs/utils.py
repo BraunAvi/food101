@@ -90,7 +90,7 @@ def floor(x):
 def ceil(x):
     return int(math.ceil(x))
 
-def plots(ims, figsize=(12,6), rows=1, interp=False, titles=None):
+def plots(ims, figsize=(36,18), rows=1, interp=False, titles=None):
     if type(ims[0]) is np.ndarray:
         ims = np.array(ims).astype(np.uint8)
         if (ims.shape[-1] != 3):
@@ -101,7 +101,7 @@ def plots(ims, figsize=(12,6), rows=1, interp=False, titles=None):
         sp = f.add_subplot(rows, cols, i+1)
         sp.axis('Off')
         if titles is not None:
-            sp.set_title(titles[i], fontsize=16)
+            sp.set_title(titles[i], fontsize=24)
         plt.imshow(ims[i], interpolation=None if interp else 'none')
 
 

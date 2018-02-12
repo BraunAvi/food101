@@ -1,4 +1,6 @@
 /data/*
 *.pyc
 /food101/*
-
+kaggle_cookies.txt
+nbs/.ipynb_checkpoints
+.DS_Store
